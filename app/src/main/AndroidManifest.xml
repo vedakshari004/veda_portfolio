@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.myportfolio" >
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyPortfolio"
+        tools:targetApi="31" >
+        <activity
+            android:name=".color"
+            android:exported="false" />
+        <activity
+            android:name=".MyPortfolioTheme"
+            android:exported="false" /> <!-- Participations Page -->
+        <activity
+            android:name=".ParticipationsActivity"
+            android:exported="true" /> <!-- Certifications Page -->
+        <activity
+            android:name=".CertificationsActivity"
+            android:exported="true" /> <!-- Projects Page -->
+        <activity
+            android:name=".ProjectsActivity"
+            android:exported="true" /> <!-- Education Page -->
+        <activity
+            android:name=".EducationActivity"
+            android:exported="true" /> <!-- Skills Page -->
+        <activity
+            android:name=".SkillsActivity"
+            android:exported="true" /> <!-- Main App Launcher -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.MyPortfolio" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
